@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agent402 Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo">AGENT402</div>
+      <div class="header-stats">
+        <div class="stat-item">
+          <span class="stat-label">Active Agents</span>
+          <span class="stat-value" id="activeAgents">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Total Payments</span>
+          <span class="stat-value" id="totalPayments">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">STX Spent</span>
+          <span class="stat-value" id="totalSpent">0.000</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <section class="panel agents-panel">
+        <h2 class="panel-title">Agents</h2>
+        <div id="agentsList" class="agents-list"></div>
+      </section>
+
+      <section class="panel balance-panel">
+        <h2 class="panel-title">Balances</h2>
+        <div id="balancesList" class="balances-list"></div>
+      </section>
+
+      <section class="panel activity-panel">
+        <h2 class="panel-title">Agent Workflow</h2>
+        <div id="workflowTree" class="workflow-tree"></div>
+      </section>
+    </div>
+
+    <div id="notifications" class="notifications"></div>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
