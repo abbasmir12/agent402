@@ -18,9 +18,8 @@ Built for the **x402-stacks hackathon** | [Architecture](./ARCHITECTURE.md) | [V
 - [Multi-Provider Bidding](#multi-provider-bidding)
 - [API Reference](#api-reference)
 - [Development](#development)
-- [Architecture](#architecture)
-- [Roadmap](#roadmap)
-- [Resources](#resources)
+- [Contributing](#contributing)
+- [License](#license)
 
 ---
 
@@ -640,127 +639,6 @@ npm run lint:fix
 
 ---
 
-## Architecture
-
-### Core Design Principles
-
-**1. HTTP 402 as First-Class Citizen**
-- Not bolted on—built from the ground up
-- Every paid endpoint returns 402 by default
-- Payment headers standardized across all endpoints
-
-**2. Autonomous Decision Making**
-- Agent evaluates costs vs. benefits
-- No human intervention required
-- Transparent decision logging
-
-**3. Blockchain Verification**
-- All payments verified on-chain
-- No trust required between parties
-- Immutable payment records
-
-**4. Extensible Architecture**
-- Easy to add new providers
-- Simple to implement new endpoints
-- Clean separation of concerns
-
-### Technology Stack
-
-**Backend:**
-- Node.js + TypeScript
-- Express.js for HTTP server
-- Stacks.js for blockchain integration
-
-**Frontend:**
-- Vanilla JavaScript (no framework bloat)
-- Real-time updates via polling
-- Neubrutalist design system
-
-**Blockchain:**
-- Stacks testnet for payments
-- STX token for transactions
-- Hiro API for verification
-
-### Security Considerations
-
-**Payment Verification:**
-- Transaction must be confirmed
-- Amount must meet requirement
-- Recipient must match server
-- No replay attacks (TX ID tracking)
-
-**Access Control:**
-- 5-minute access windows after payment
-- Cached verification results
-- Automatic expiry
-
-**Error Handling:**
-- Graceful degradation
-- Retry logic with exponential backoff
-- Clear error messages
-
-For detailed architecture documentation, see [ARCHITECTURE.md](./ARCHITECTURE.md)
-
----
-
-## Roadmap
-
-### Phase 1: Hackathon (Complete)
-- [x] HTTP 402 implementation
-- [x] Stacks testnet integration
-- [x] Autonomous payment handling
-- [x] Multi-provider bidding system
-- [x] Budget management
-- [x] Dashboard visualization
-- [x] Cost-aware decision making
-
-### Phase 2: Post-Hackathon
-- [ ] Multi-agent collaboration
-- [ ] Agent learning and adaptation
-- [ ] Predictive budget optimization
-- [ ] Provider reputation system
-- [ ] Dynamic pricing
-- [ ] Real-time dashboard updates
-
-### Phase 3: Production
-- [ ] Move to Stacks mainnet
-- [ ] Persistent storage (PostgreSQL)
-- [ ] Redis caching layer
-- [ ] Monitoring and alerts
-- [ ] Rate limiting
-- [ ] API key management
-- [ ] Usage analytics
-
-### Phase 4: Ecosystem
-- [ ] Real research API integrations
-- [ ] Payment channels for speed
-- [ ] Cross-chain support
-- [ ] Developer SDK
-- [ ] Provider marketplace
-- [ ] Agent-to-agent payments
-
----
-
-## Resources
-
-### Stacks Blockchain
-- **Testnet Faucet:** https://explorer.hiro.so/sandbox/faucet?chain=testnet
-- **Testnet Explorer:** https://explorer.hiro.so/?chain=testnet
-- **Stacks.js Documentation:** https://docs.stacks.co/stacks.js
-- **Hiro API Reference:** https://docs.hiro.so/api
-
-### HTTP 402 & x402
-- **x402 Specification:** https://github.com/base-org/x402
-- **Hackathon Details:** https://dorahacks.io/hackathon/x402-stack
-- **HTTP 402 RFC:** https://tools.ietf.org/html/rfc7231#section-6.5.2
-
-### Development
-- **TypeScript:** https://www.typescriptlang.org/
-- **Express.js:** https://expressjs.com/
-- **Axios:** https://axios-http.com/
-
----
-
 ## Contributing
 
 Contributions are welcome! Please follow these guidelines:
@@ -790,25 +668,6 @@ npm run lint
 ## License
 
 MIT License - see [LICENSE](LICENSE) file for details
-
----
-
-## Acknowledgments
-
-Built for the **x402-stacks hackathon** by the Agent402 team.
-
-Special thanks to:
-- Stacks Foundation for blockchain infrastructure
-- Hiro for developer tools and APIs
-- x402 community for the vision of HTTP 402
-
----
-
-## Contact
-
-**Project Repository:** https://github.com/yourusername/agent402  
-**Demo Video:** [Link to video]  
-**Hackathon Submission:** [Link to submission]
 
 ---
 
