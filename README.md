@@ -2,24 +2,7 @@
 
 > **Autonomous research agent using HTTP 402 Payment Required with Stacks blockchain payments**
 
-Built for the **x402-stacks hackathon** | [Architecture](./ARCHITECTURE.md) | [Video Demo](#)
-
----
-
-## Table of Contents
-
-- [Overview](#overview)
-- [The Problem](#the-problem)
-- [The Solution](#the-solution)
-- [Key Features](#key-features)
-- [Quick Start](#quick-start)
-- [Project Structure](#project-structure)
-- [How It Works](#how-it-works)
-- [Multi-Provider Bidding](#multi-provider-bidding)
-- [API Reference](#api-reference)
-- [Development](#development)
-- [Contributing](#contributing)
-- [License](#license)
+Built for the **x402-stacks hackathon** | [Architecture](./ARCHITECTURE.md) | [Video Demo](https://youtu.be/scstDcbr9eI)
 
 ---
 
